@@ -27,8 +27,8 @@ function animatePress(color) {
 function nextSequence() {
   level+=1;
   $('#level-title').text('Level'+level);
-  var randomnumber=Math.floor(Math.random()*4);
-  var randomChosenColor= buttonColors[randomnumber];
+  var randomNumber=Math.floor(Math.random()*4);
+  var randomChosenColor= buttonColors[randomNumber];
   gamePattern.push(randomChosenColor);
   $('#'+randomChosenColor).fadeIn(100).fadeOut(100).fadeIn(100);
   playSound(randomChosenColor);
